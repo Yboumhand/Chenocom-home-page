@@ -5,6 +5,7 @@ SPECIFIC CSS STYLES
 */
 
 :root {
+  --clr-pure-orange: #f5b400;
   --clr-white: #fff;
   --clr-dark-gray: #2d2d2d;
   --clr-light-gray: #ffffffcc;
@@ -59,7 +60,7 @@ SPECIFIC CSS STYLES
 
 .form-container,
 .info-container {
-  width: 998px;
+  max-width: 998px;
   margin-inline: auto;
 }
 
@@ -81,8 +82,8 @@ SPECIFIC CSS STYLES
 .static-container__heading {
   font-family: var(--poppins-font);
   font-weight: 500;
-  font-size: 64px;
-  line-height: 72px;
+  font-size: 4rem; /* 64px */
+  line-height: 4.5rem; /* 72px */
   letter-spacing: -2%;
 }
 
@@ -252,17 +253,31 @@ COMPANY INFO STYLES
 }
 
 .info-container__item__top {
+  position: relative;
   display: flex;
+  width: 100%;
   align-items: center;
   margin-bottom: 8px;
   line-height: 45px;
+}
+
+.mail-txt,
+.telephone-txt,
+.location-txt,
+.clock-txt {
+  position: absolute;
+  left: 68px;
+  bottom: 16.5px;
+}
+
+.info-container__item__top img {
+  padding: auto 0;
 }
 
 .info-container p {
   color: var(--clr-light-gray);
   font-family: var(--inter-font);
   font-weight: 400;
-  font-style: Regular;
   font-size: 1.25rem; /* 20px */
   line-height: 31px;
   letter-spacing: 0%;
@@ -305,7 +320,7 @@ CALL TO ACTION STYLES
   color: var(--clr-white);
   font-family: var(--poppins-font);
   font-weight: 500;
-  font-size: 1rem; /* 16px */  
+  font-size: 1rem; /* 16px */
   line-height: 30px;
   letter-spacing: 0%;
   transition: box-shadow 0.3s ease;
@@ -314,11 +329,111 @@ CALL TO ACTION STYLES
 /*
 ==================
 NOTE: I SHOULD FIX THE MOBILE RESPONSIVENESS ISSUE
-==================
+==================a
 */
 
-@media (max-width: 768px) {
-  .static-container__heading {
-    width: auto;
+@media (max-width: 1290px) {
+  .badge {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+  }
+
+  @media (max-width: 768px) {
+    .hero-section__hero-content__title {
+      margin: 50px auto 20px auto;
+    }
+
+    .form-container__description {
+      font-size: 1rem;
+    }
+
+    .hero-section__hero-content__description {
+      margin-bottom: 30px;
+    }
+
+    .static-container__heading {
+      display: flex;
+      font-size: 2rem; /* 32px */
+      line-height: 100%;
+    }
+
+    .form-container__heading {
+      max-width: 657px;
+      height: 78px;
+      margin-bottom: 20px;
+      border-radius: 6px;
+    }
+
+    .first-row,
+    .second-row,
+    .info-container,
+    .call-to-action,
+    .call-to-action-btn-link {
+      flex-direction: column;
+    }
+
+    .form-container {
+      max-width: 339px;
+    }
+
+    /* Formulaire */
+    .form {
+      height: auto !important;
+      padding: 20px;
+    }
+
+    .form-container {
+      width: 100% !important;
+      max-width: 100% !important;
+      margin: 0 !important;
+      padding: 0 15px;
+    }
+
+    .first-row,
+    .second-row {
+      flex-direction: column;
+      gap: 20px !important;
+      margin-top: 20px !important;
+    }
+
+    .form-container__fields input,
+    .form-container__fields textarea {
+      font-size: 1rem !important;
+    }
+
+    .envoyer-link {
+      display: inline-block;
+      width: 100% !important;
+      margin-top: 30px !important;
+    }
+
+    /* Section Info */
+    .info-container {
+      flex-direction: column;
+    }
+
+    .info-container__map img {
+      display: flex;
+      order: 1;
+      width: 100% !important;
+      max-width: 100% !important;
+      margin-right: 0 !important;
+      margin-top: 50px;
+      margin-bottom: 20px;
+    }
+
+    .info-container__items {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-self: center;
+      order: 2;
+    }
+
+    .form-container__fields input,
+    .form-container__fields textarea {
+      color: var(--clr-pure-orange);
+    }
   }
 }
