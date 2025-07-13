@@ -111,6 +111,11 @@ header {
   color: white;
 }
 
+.flag {
+  margin-top: 1em;
+  margin-right: 0;
+}
+
 /* ---- CONTACT BOTTON ----*/
 .contact-botton-link {
   display: flex;
