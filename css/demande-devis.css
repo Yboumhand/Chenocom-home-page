@@ -1,0 +1,30 @@
+.static-container__heading {
+  width: 13em;
+}
+
+.static-container__heading {
+  margin-bottom: 4em;
+}
+
+.form {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.badge5 {
+  position: absolute;
+  right: -3em;
+  bottom: -4.5em;
+}
+
+.form-container__description {
+  margin-block: 3em;
+}
+
+.info-container {
+  margin-bottom: 0;
+}
+
+.call-to-action {
+  margin-top: 5em;
+}

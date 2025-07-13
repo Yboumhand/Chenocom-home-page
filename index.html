@@ -49,7 +49,7 @@
       <div class="container">
         <div class="header-container">
           <!-- Logo -->
-          <a href="/" class="logo">
+          <a href="#" class="logo">
             <img
               src="images/cheno.svg"
               alt="Logo de Chenocom"
@@ -99,8 +99,6 @@
                   />
                 </span>
 
-                <!-- in case the user clicked on the arrow icons, we will dropdown our several services like 'Expertises' list-item -->
-
                 <div class="submenu">
                   <ul>
                     <li>
@@ -135,7 +133,10 @@
                 <a href="#" class="nav-link">Réalisations</a>
               </li>
               <li class="nav-item"><a href="#" class="nav-link">Blogs</a></li>
-
+              <li class="nav-item"><a href="#" class="nav-link">FAQ</a></li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Demande de devis</a>
+              </li>
               <li class="has-submenu">
                 <a href="#" class="nav-link">
                   <span class="flag-selector">
@@ -158,7 +159,7 @@
                       <a href="#"
                         ><img
                           class="alt-flag"
-                          src="images/fr-flag.svg"
+                          src="images/fr.svg"
                           alt="Francais"
                       /></a>
                     </li>
@@ -166,7 +167,7 @@
                       <a href="#"
                         ><img
                           class="alt-flag"
-                          src="images/en-flag.svg"
+                          src="images/en.svg"
                           alt="Anglais"
                       /></a>
                     </li>
@@ -175,7 +176,7 @@
               </li>
 
               <li class="nav-item">
-                <a href="contact.html" class="nav-link">Contact Us</a>
+                <a href="#" class="nav-link">Contact Us</a>
               </li>
             </ul>
           </nav>
@@ -184,7 +185,7 @@
             <ul class="nav-menu">
               <li class="has-submenu">
                 <span class="link-icon">
-                  <a href="#" class="nav-link navlink-1">Qui sommes-nous</a>
+                  <a href="#" class="nav-link"> Qui sommes-nous</a>
                   <img
                     src="images/flèche.svg"
                     alt="Flèche vers le bas"
@@ -278,50 +279,54 @@
               </li>
               <li class="nav-item"><a href="#" class="nav-link">Blogs</a></li>
               <li class="nav-item"><a href="#" class="nav-link">FAQ</a></li>
-
-              <li class="has-submenu">
-                <span class="link-icon">
-                  <a href="#" class="nav-link">
-                    <img src="./images/en-flag.svg" alt="UK flag" />
-                  </a>
-                  <img
-                    src="images/flèche.svg"
-                    alt="Flèche vers le bas"
-                    class="icon-arrow"
-                  />
-                </span>
-
-                <div class="submenu">
-                  <ul>
-                    <li>
-                      <a href="#" class="submenu-link">
-                        <img src="./images/en-flag.svg" alt="UK flag" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="submenu-link">
-                        <img src="./images/fr-flag.svg" alt="France flag" />
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+              <li class="nav-item">
+                <a href="demande-devis.html" class="nav-link">Demande de devis</a>
               </li>
             </ul>
           </nav>
 
-          <!-- Bouton Contact -->
+          <!-- Flag & Bouton Contact -->
+          <div class="flag-selector--btn-contact">
+            <li class="has-submenu">
+              <span class="link-icon flag">
+                <img
+                  id="current-flag-mobile"
+                  src="images/en-flag.svg"
+                  data-lang="en"
+                  alt="Langue actuelle"
+                />
 
-          <a href="contact.html" class="contact-botton-link">
-            <span>Contact Us</span>
-            <img
-              src="images/pointer.svg"
-              alt="Icône de pointeur"
-              class="icon-pointer"
-            />
-          </a>
+                <img
+                  src="images/flèche.svg"
+                  alt="Flèche vers le bas"
+                  class="icon-arrow"
+                />
+              </span>
+
+              <div class="submenu">
+                <ul>
+                  <li>
+                    <a href="#" class="submenu-link">Anglais</a>
+                  </li>
+                  <li>
+                    <a href="#" class="submenu-link">Francais</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <a href="#" class="contact-botton-link">
+              <span>Contact Us</span>
+              <img
+                src="images/pointer.svg"
+                alt="Icône de pointeur"
+                class="icon-pointer"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </header>
+
     <main>
       <section class="hero-section">
         <div class="container section-container">
@@ -404,6 +409,7 @@
           </div>
         </div>
       </section>
+      -->
 
       <section class="clients-section">
         <div class="container section-container">

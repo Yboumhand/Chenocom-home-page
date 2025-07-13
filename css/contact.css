@@ -55,7 +55,7 @@ SPECIFIC CSS STYLES
 
 .form {
   width: 100%;
-  height: 1482px;
+  min-height: 1482px;
 }
 
 .form-container,
@@ -365,6 +365,14 @@ NOTE: I SHOULD FIX THE MOBILE RESPONSIVENESS ISSUE
       border-radius: 6px;
     }
 
+    .mail-txt,
+    .telephone-txt,
+    .location-txt,
+    .clock-txt {
+      font-size: 1.5rem;
+    }
+    
+    
     .first-row,
     .second-row,
     .info-container,
@@ -395,6 +403,13 @@ NOTE: I SHOULD FIX THE MOBILE RESPONSIVENESS ISSUE
       flex-direction: column;
       gap: 20px !important;
       margin-top: 20px !important;
+    }
+
+    .info-container__item-1 p,
+    .info-container__item-2 p,
+    .info-container__item-3 p,
+    .info-container__item-4 p {
+      font-size: 1.2rem; /* 14px */
     }
 
     .form-container__fields input,

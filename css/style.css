@@ -6,7 +6,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   position: relative;
   font-family: "Inter", sans-serif;
@@ -22,7 +21,7 @@ header {
   position: sticky;
   z-index: 1000;
   top: 0;
-  padding: 13px 0;
+  padding: 13.5px 0;
   background-color: #0e0e0e;
   border-bottom: 2px solid #b2b2b212;
 }
@@ -32,7 +31,6 @@ header {
   width: 100%;
   margin: auto;
 }
-
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -42,10 +40,12 @@ header {
 /*---- LOGO ---- */
 .logo {
   margin: auto 0;
-}
-.logo .logo-img {
   width: 144.84px;
   height: 54px;
+}
+.logo .logo-img {
+  width: 100%;
+  height: 100%;
 }
 
 /* ---- NAVIGATION ----*/
@@ -60,7 +60,7 @@ header {
 }
 
 .navbar .nav-link {
-  color: #fff;
+  color: white;
   text-decoration: none;
   font-weight: 500;
   font-size: 16px;
@@ -89,13 +89,20 @@ header {
 .navbar .nav-link:hover {
   color: #f5b400;
 }
-
-.link-icon:hover .icon-arrow,
-.flag-selector:hover .icon-arrow {
+.flag-selector--btn-contact {
+  display: flex;
+  gap: 20px;
+}
+.flag-selector--btn-contact .submenu {
+  margin-top: 5px;
+}
+.navbar .link-icon:hover .icon-arrow,
+.flag-selector:hover .icon-arrow,
+.flag-selector--btn-contact:hover .icon-arrow {
   content: url("images/flèche_jaune.svg");
   cursor: pointer;
 }
-.link-icon:hover .nav-link {
+.navbar .link-icon:hover .nav-link {
   color: #f5b400;
 }
 .link-icon,
@@ -106,13 +113,11 @@ header {
 
 /* ---- CONTACT BOTTON ----*/
 .contact-botton-link {
-  width: 194px;
-  height: 53px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  padding: 19px 18px;
+  padding: 16px 28px;
   background: #f5b400;
   color: #1c1a1a;
   text-decoration: none;
@@ -121,7 +126,6 @@ header {
   font-size: 20px;
   white-space: nowrap;
   font-family: "Inter", sans-serif;
-  white-space: nowrap;
 }
 
 .contact-botton-link:hover {

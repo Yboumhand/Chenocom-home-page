@@ -5,12 +5,12 @@ burgerMenu.addEventListener("click", () => {
   burgerMenu.classList.toggle("active");
   mobileMenu.classList.toggle("active");
 });
-const items_mobile = document.querySelectorAll(".navbar__mobile .has-submenu")
+const items_mobile = document.querySelectorAll(".navbar__mobile .has-submenu");
 
-items_mobile.forEach(item => {
+items_mobile.forEach((item) => {
   item.onclick = () => {
-    item.classList.toggle("has-submenu--active")
-  }
+    item.classList.toggle("has-submenu--active");
+  };
 });
 
 //Initialize Swiper
@@ -25,7 +25,6 @@ var swiper = new Swiper(".hero-section-swiper", {
     clickable: true,
   },
 });
-
 
 // Initialize mobile swiper with autoplay
 var mobileSwiper = new Swiper(".swiper-mobile-swiper", {
@@ -68,8 +67,8 @@ function close_video() {
 
 function open_video() {
   modal.style.display = "flex";
-  modal.querySelector("video").currentTime = 0,
-  modal.querySelector("video").play();
+  (modal.querySelector("video").currentTime = 0),
+    modal.querySelector("video").play();
 }
 
 openBtn.onclick = open_video;
@@ -78,31 +77,28 @@ closeBtn.onclick = close_video;
 
 window.onclick = (e) => {
   if (e.target === modal) {
-  close_video()
+    close_video();
   }
 };
 
-//  swiper mode 
-
+//  swiper mode
 
 var testimonial_swiper = new Swiper(".testimonial-swiper", {
-      spaceBetween: 30,
-      pagination: {
-        el: ".swiper-pagination-testimonial",
-        clickable: true,
-      },
-    });
-
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination-testimonial",
+    clickable: true,
+  },
+});
 
 // first function
 
-
 function sendButton() {
-  window.alert('Not yet implemented!');
+  window.alert("Not yet implemented!");
 }
 
 function undefinedFunction() {
-    alert(
-      "I have no idea how i should include the Js swiper interactivity effect, may you help me :)"
-    );
+  alert(
+    "I have no idea how i should include the Js swiper interactivity effect, may you help me :)"
+  );
 }

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us - Chenocom</title>
+    <title>Demande de Devis - Chenocom</title>
 
     <!-- favicon icon -->
 
@@ -39,6 +39,10 @@
     <!-- Linking specific CSS styles to contact html page -->
 
     <link rel="stylesheet" href="./css/contact.css" />
+
+    <!-- Linking specific CSS styles to Demande de devis html page -->
+
+    <link rel="stylesheet" href="./css/demande-devis.css" />
   </head>
 
   <body>
@@ -357,73 +361,36 @@
           <div class="form-container">
             <div class="form-container__heading">
               <div class="static-container__heading">
-                <span class="linear-gradient">Contactez-nous </span>
+                <span class="linear-gradient"
+                  >Demandez votre devis spontanément</span
+                >
               </div>
               <div class="badge badge5">
                 <img src="images/pointer.svg" alt="icon-pointer" />
-                <span>Contact Us</span>
+                <span>Fast Devis</span>
               </div>
             </div>
 
             <div class="form-container__description">
-              <p>Une idée, un projet, une question ?</p>
-              <p>Nous serons ravis d'échanger avec vous !</p>
+              <p>
+                Envoyez-nous votre brief ou cahier des charges, nous vous
+                répondrons sous 24h.
+              </p>
             </div>
 
             <div class="form-container__fields">
-              <div class="first-row">
-                <div class="name">
-                  <label for="name">Nom * :</label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    placeholder="ex: Jean Dupont"
-                    required
-                  />
-                </div>
-                <div class="email">
-                  <label for="email">Email * :</label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="ex: jean.dupont@exemple.com"
-                    required
-                  />
-                </div>
-              </div>
 
-              <div class="second-row">
-                <div class="telephone">
-                  <label for="telephone">Tel * :</label>
-                  <input
-                    type="tel"
-                    id="telephone"
-                    name="telephone"
-                    placeholder="ex: 06 12 34 56 78"
-                    required
-                  />
-                </div>
-                <div class="object">
-                  <label for="object">Objet :</label>
-                  <input
-                    type="text"
-                    id="object"
-                    name="object"
-                    placeholder="ex: Demande de devis"
-                  />
-                </div>
-              </div>
-
-              <div class="message third-row">
-                <label for="message">Message :</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows="1"
-                  placeholder="ex: Bonjour, je souhaiterais obtenir des informations sur..."
-                ></textarea>
+              <!-- Champ Upload Unique -->
+               
+              <div class="upload-row">
+                <label for="file">Fichier (PDF, DOC, PNG...) *</label>
+                <input
+                  type="file"
+                  id="file"
+                  name="file"
+                  required
+                  accept=".pdf,.doc,.docx,.png,.jpg"
+                />
               </div>
 
               <button type="submit" class="contact-botton-link envoyer-link">
@@ -607,4 +574,3 @@
     <script src="script.js" defer></script>
   </body>
 </html>
-0
